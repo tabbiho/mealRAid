@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack_conf/webpack.prod.js",
-    "start": "node index.mjs",
+    "start": "nodemon index.mjs",
     "watch": "nodemon index.mjs"
   },
   "repository": {
@@ -53,11 +53,21 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
     "cookie-parser": "^1.4.5",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "jssha": "^3.2.0",
+    "materialize-css": "^1.0.0-rc.2",
     "method-override": "^3.0.0",
+    "moment": "^2.29.3",
+    "multer": "^1.4.4",
     "pg": "^8.5.1",
+    "regenerator-runtime": "^0.13.9",
     "sequelize": "^6.3.5"
   }
 }

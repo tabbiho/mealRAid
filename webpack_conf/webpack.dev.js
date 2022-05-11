@@ -7,7 +7,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   entry: {
-    main: ['webpack-hot-middleware/client', './src/index.jsx'],
+    main: ['regenerator-runtime/runtime.js', 'webpack-hot-middleware/client', './src/index.jsx'],
   },
   mode: 'development',
   devtool: 'inline-source-map',

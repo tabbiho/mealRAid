@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   entry: {
-    main: ['./src/index.jsx'],
+    main: ['regenerator-runtime/runtime.js', './src/index.jsx'],
   },
   mode: 'production',
   plugins: [
